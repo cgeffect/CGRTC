@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		677186E4BEB3C4A355D10A71 /* Pods_CGRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419B5087F47938291B5EDFD7 /* Pods_CGRTC.framework */; };
+		9668C5E926634A5600EBD1DC /* CGRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668C5E826634A5600EBD1DC /* CGRTCClient.m */; };
+		9668C5ED26634B3400EBD1DC /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668C5E5266349CA00EBD1DC /* WebRTC.framework */; };
+		9668C5EE26634B3400EBD1DC /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9668C5E5266349CA00EBD1DC /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9668C6022663541600EBD1DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668C5FE2663541600EBD1DC /* ViewController.m */; };
+		9668C6032663541600EBD1DC /* SignalClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668C5FF2663541600EBD1DC /* SignalClient.m */; };
+		9668C6042663541600EBD1DC /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668C6012663541600EBD1DC /* CallViewController.m */; };
+		E5C19589265DDBAC003AC764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C19588265DDBAC003AC764 /* AppDelegate.m */; };
+		E5C1958F265DDBAC003AC764 /* CGRTCController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1958E265DDBAC003AC764 /* CGRTCController.m */; };
+		E5C19594265DDBAD003AC764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C19593265DDBAD003AC764 /* Assets.xcassets */; };
+		E5C19597265DDBAD003AC764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C19595265DDBAD003AC764 /* LaunchScreen.storyboard */; };
+		E5C1959A265DDBAD003AC764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C19599265DDBAD003AC764 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9668C5EF26634B3400EBD1DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9668C5EE26634B3400EBD1DC /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		419B5087F47938291B5EDFD7 /* Pods_CGRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9668C5E5266349CA00EBD1DC /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		9668C5E726634A5600EBD1DC /* CGRTCClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGRTCClient.h; sourceTree = "<group>"; };
+		9668C5E826634A5600EBD1DC /* CGRTCClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGRTCClient.m; sourceTree = "<group>"; };
+		9668C5F026634B5900EBD1DC /* CGRTC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CGRTC.md; sourceTree = "<group>"; };
+		9668C5FC2663541600EBD1DC /* SignalClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalClient.h; sourceTree = "<group>"; };
+		9668C5FD2663541600EBD1DC /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		9668C5FE2663541600EBD1DC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9668C5FF2663541600EBD1DC /* SignalClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalClient.m; sourceTree = "<group>"; };
+		9668C6002663541600EBD1DC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9668C6012663541600EBD1DC /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		B17488179304A40AD9B7A747 /* Pods-CGRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGRTC.debug.xcconfig"; path = "Target Support Files/Pods-CGRTC/Pods-CGRTC.debug.xcconfig"; sourceTree = "<group>"; };
+		C69CB0219358BB5F29E52B67 /* Pods-CGRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGRTC.release.xcconfig"; path = "Target Support Files/Pods-CGRTC/Pods-CGRTC.release.xcconfig"; sourceTree = "<group>"; };
+		E5C19584265DDBAC003AC764 /* CGRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C19587265DDBAC003AC764 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5C19588265DDBAC003AC764 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5C1958D265DDBAC003AC764 /* CGRTCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGRTCController.h; sourceTree = "<group>"; };
+		E5C1958E265DDBAC003AC764 /* CGRTCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGRTCController.m; sourceTree = "<group>"; };
+		E5C19593265DDBAD003AC764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5C19596265DDBAD003AC764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5C19598265DDBAD003AC764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C19599265DDBAD003AC764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5C19581265DDBAC003AC764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9668C5ED26634B3400EBD1DC /* WebRTC.framework in Frameworks */,
+				677186E4BEB3C4A355D10A71 /* Pods_CGRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D9646B42B1D9FA75234E218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B17488179304A40AD9B7A747 /* Pods-CGRTC.debug.xcconfig */,
+				C69CB0219358BB5F29E52B67 /* Pods-CGRTC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9668C5FB2663541600EBD1DC /* RTC */ = {
+			isa = PBXGroup;
+			children = (
+				9668C5FD2663541600EBD1DC /* CallViewController.h */,
+				9668C6012663541600EBD1DC /* CallViewController.m */,
+				9668C5FC2663541600EBD1DC /* SignalClient.h */,
+				9668C5FF2663541600EBD1DC /* SignalClient.m */,
+				9668C6002663541600EBD1DC /* ViewController.h */,
+				9668C5FE2663541600EBD1DC /* ViewController.m */,
+			);
+			path = RTC;
+			sourceTree = "<group>";
+		};
+		D89BBE66E7350BAEFB425B59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				419B5087F47938291B5EDFD7 /* Pods_CGRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5C1957B265DDBAC003AC764 = {
+			isa = PBXGroup;
+			children = (
+				E5C19586265DDBAC003AC764 /* CGRTC */,
+				E5C19585265DDBAC003AC764 /* Products */,
+				0D9646B42B1D9FA75234E218 /* Pods */,
+				D89BBE66E7350BAEFB425B59 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E5C19585265DDBAC003AC764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5C19584265DDBAC003AC764 /* CGRTC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5C19586265DDBAC003AC764 /* CGRTC */ = {
+			isa = PBXGroup;
+			children = (
+				9668C5FB2663541600EBD1DC /* RTC */,
+				9668C5E5266349CA00EBD1DC /* WebRTC.framework */,
+				E5C19587265DDBAC003AC764 /* AppDelegate.h */,
+				E5C19588265DDBAC003AC764 /* AppDelegate.m */,
+				9668C5E726634A5600EBD1DC /* CGRTCClient.h */,
+				9668C5E826634A5600EBD1DC /* CGRTCClient.m */,
+				E5C1958D265DDBAC003AC764 /* CGRTCController.h */,
+				E5C1958E265DDBAC003AC764 /* CGRTCController.m */,
+				E5C19593265DDBAD003AC764 /* Assets.xcassets */,
+				E5C19595265DDBAD003AC764 /* LaunchScreen.storyboard */,
+				E5C19598265DDBAD003AC764 /* Info.plist */,
+				E5C19599265DDBAD003AC764 /* main.m */,
+				9668C5F026634B5900EBD1DC /* CGRTC.md */,
+			);
+			path = CGRTC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5C19583265DDBAC003AC764 /* CGRTC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5C1959D265DDBAD003AC764 /* Build configuration list for PBXNativeTarget "CGRTC" */;
+			buildPhases = (
+				0F24B02F635514F1A1A051CE /* [CP] Check Pods Manifest.lock */,
+				E5C19580265DDBAC003AC764 /* Sources */,
+				E5C19581265DDBAC003AC764 /* Frameworks */,
+				E5C19582265DDBAC003AC764 /* Resources */,
+				9668C5EF26634B3400EBD1DC /* Embed Frameworks */,
+				2610F28785BF9EF18545D7AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGRTC;
+			productName = CGRTC;
+			productReference = E5C19584265DDBAC003AC764 /* CGRTC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5C1957C265DDBAC003AC764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E5C19583265DDBAC003AC764 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = E5C1957F265DDBAC003AC764 /* Build configuration list for PBXProject "CGRTC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5C1957B265DDBAC003AC764;
+			productRefGroup = E5C19585265DDBAC003AC764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5C19583265DDBAC003AC764 /* CGRTC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5C19582265DDBAC003AC764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5C19597265DDBAD003AC764 /* LaunchScreen.storyboard in Resources */,
+				E5C19594265DDBAD003AC764 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F24B02F635514F1A1A051CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CGRTC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2610F28785BF9EF18545D7AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CGRTC/Pods-CGRTC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CGRTC/Pods-CGRTC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CGRTC/Pods-CGRTC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5C19580265DDBAC003AC764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9668C6032663541600EBD1DC /* SignalClient.m in Sources */,
+				E5C1958F265DDBAC003AC764 /* CGRTCController.m in Sources */,
+				E5C19589265DDBAC003AC764 /* AppDelegate.m in Sources */,
+				9668C5E926634A5600EBD1DC /* CGRTCClient.m in Sources */,
+				E5C1959A265DDBAD003AC764 /* main.m in Sources */,
+				9668C6042663541600EBD1DC /* CallViewController.m in Sources */,
+				9668C6022663541600EBD1DC /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E5C19595265DDBAD003AC764 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5C19596265DDBAD003AC764 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5C1959B265DDBAD003AC764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5C1959C265DDBAD003AC764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5C1959E265DDBAD003AC764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B17488179304A40AD9B7A747 /* Pods-CGRTC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7R628A3T2;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CGRTC",
+				);
+				INFOPLIST_FILE = CGRTC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.codec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E5C1959F265DDBAD003AC764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69CB0219358BB5F29E52B67 /* Pods-CGRTC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7R628A3T2;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CGRTC",
+				);
+				INFOPLIST_FILE = CGRTC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.codec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5C1957F265DDBAC003AC764 /* Build configuration list for PBXProject "CGRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5C1959B265DDBAD003AC764 /* Debug */,
+				E5C1959C265DDBAD003AC764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5C1959D265DDBAD003AC764 /* Build configuration list for PBXNativeTarget "CGRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5C1959E265DDBAD003AC764 /* Debug */,
+				E5C1959F265DDBAD003AC764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5C1957C265DDBAC003AC764 /* Project object */;
+}
